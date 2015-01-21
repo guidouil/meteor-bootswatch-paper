@@ -1,4 +1,8 @@
-panter-bootswatch-paper
+bootswatch-paper-noglyph
 =======================
 
-bootswatch-paper theme wrapped for meteor
+bootswatch-paper theme  without the glyphicons font wrapped for meteor
+
+```
+meteor add guidouil:bootswatch-paper-noglyph
+```

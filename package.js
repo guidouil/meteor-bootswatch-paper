@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'panter:bootswatch-paper',
-  summary: 'Bootswach paper theme 3.3.1',
+  name: 'guidouil:bootswatch-paper-noglyph',
+  summary: 'Bootswach paper theme 3.3.1 without the glyphicons font',
   version: '1.0.0',
-  git: 'https://github.com/panter/meteor-bootswatch-paper'
+  git: 'https://github.com/guidouil/meteor-bootswatch-paper-noglyph'
 });
 
 
@@ -16,9 +16,4 @@ Package.onUse(function (api) {
   api.addFiles(path.join(asset_path, 'css', 'bootstrap.css'), 'client');
   api.addFiles(path.join(asset_path, 'js', 'bootstrap.js'), 'client');
 
-  // fonts
-  api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.eot'), 'client');
-  api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.ttf'), 'client');
-  api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.svg'), 'client');
-  api.addFiles(path.join(asset_path, 'fonts', 'glyphicons-halflings-regular.woff'), 'client');
 });
