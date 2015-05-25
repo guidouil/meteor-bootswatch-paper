@@ -1,0 +1,15 @@
+Hey Marco,
+
+Current Meteor 3rd party packaging best practices recommend including the upstream as a submodule in the wrapper repo, then creating `package.js` files that refer to it. Also, the sources should be un-minified.
+
+I went ahead and published [all Bootswatch themes](https://atmospherejs.com/bootswatch) that way so you don't have to worry about this stuff. Here's [the source repo](https://github.com/MeteorPackaging/bootswatch).
+
+Note that [adding the glyphicons font is an upstream problem with Bootswatch](https://github.com/thomaspark/bootswatch/issues/466) and I've filed an issue. To not include the Glyphicons, just install https://atmospherejs.com/twbs/bootstrap-noglyph then the [official Bootswatch Paper package](https://atmospherejs.com/bootswatch/paper).
+
+If you can do the community a favor, can you please hide the old package? It will still be installable by apps and dependent packages; it will just be hidden from Atmosphere searches:
+
+    meteor admin set-unmigrated panter:bootswatch-paper
+
+Thanks,
+Dan
+Atmosphere curator
